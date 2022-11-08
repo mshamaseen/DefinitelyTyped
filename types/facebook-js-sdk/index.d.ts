@@ -337,6 +337,34 @@ declare namespace facebook {
         return_scopes?: boolean | undefined;
         enable_profile_selector?: boolean | undefined;
         profile_selector_ids?: string | undefined;
+        extras?: {
+            feature?: string,
+            setup?: {
+                business?: {
+                    name?: string
+                    email?: string
+                    website?: string
+                    phone?: {
+                        code?: number
+                        number?:string
+                    }
+                    address?: {
+                        streetAddress1?: string
+                        streetAddress2?:string
+                        city?:string
+                        state?:string
+                        zipPostal?:string
+                        country?:string
+                        timezone?:string
+                    }
+                }
+                phone?: {
+                    displayName?:string
+                    category?:string
+                    description?:string
+                }
+            }
+        }
     }
 
     ////////////////////////
